@@ -2,15 +2,14 @@
 
 # 7-Day React Frontend Challenge
 
----
 
-## Day 1: Todo List App
-- Create a simple todo list application where users can add, edit, and delete tasks.
-- **Technologies**: React, useState, useEffect
+## Day 1: Age Calculator
+- Created a responsive age calculator where users can input their birthday and see their current age in years.
+- **Technologies**: React, useState
 - **Features**:
-  - Add tasks with a deadline
-  - Mark tasks as complete
-  - Filter tasks (all, active, completed)
+  - Input birthday
+  - Display age in real-time
+  - Responsive design for various screen sizes
 
 ---
 
@@ -20,7 +19,6 @@
 - **Features**:
   - Search for weather by city
   - Display temperature, humidity, wind speed, and a weather icon
-  - Option to switch between Celsius and Fahrenheit
 
 ---
 

@@ -4,7 +4,9 @@ import Age from './components/1Age_Calculator/Age.jsx'
 import Weather from './components/2Weather_App/Weather.jsx'
 import Navbar from './components/navbar.jsx'
 
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Ecommerce from './components/3E-commerce/E_commerce.jsx'
 
 
 function App() {
@@ -33,6 +35,15 @@ function App() {
         <>
           <Navbar />
           <Weather />
+        </>
+      ),
+    },
+    {
+      path: "/project/E-commerce",
+      element: (
+        <>
+          <Navbar />
+          <Ecommerce />
         </>
       ),
     },
