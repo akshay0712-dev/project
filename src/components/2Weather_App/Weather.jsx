@@ -56,7 +56,7 @@ const Weather = () => {
         {error && <div className="text-red-500">{error}</div>}
         {weatherData && weatherData.current_observation && (
           <div className="mt-4">
-            <h2 className="text-xl">{city}</h2>
+            <h2 className="text-xl capitalize">{city}</h2>
             <p>
               Temperature:{" "}
               {(
