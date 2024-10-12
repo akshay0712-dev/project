@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="bg-slate-700 flex md:flex-row flex-wrap gap-3 justify-end ">
            <NavLink to={`/project/Age`} className="font-normal text-lg capitalize cursor-pointer bg-slate-600 py-1 px-5 border border-white rounded-lg ">01 Age</NavLink >
            <NavLink to={`/project/Weather`}  className="font-normal text-lg capitalize cursor-pointer bg-slate-600 py-1 px-5 border border-white rounded-lg ">02 Weather</NavLink >
-           {/* <NavLink to={`/project/E-commerce`}  className="font-normal text-lg capitalize cursor-pointer bg-slate-600 py-1 px-5 border border-white rounded-lg ">02 E-commerce</NavLink > */}
+           <NavLink to={`/project/E-commerce`}  className="font-normal text-lg capitalize cursor-pointer bg-slate-600 py-1 px-5 border border-white rounded-lg  ">02 E-commerce</NavLink >
         </div>
     </div>
 

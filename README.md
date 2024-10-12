@@ -29,6 +29,7 @@
   - Product image gallery
   - Product details (title, description, price)
   - Add to cart functionality
+  - ****Filter Functionality****: Users can filter products based on various criteria such as category, Electronics, Jewelery and more enhancing the browsing experience.
 
 ---
 
