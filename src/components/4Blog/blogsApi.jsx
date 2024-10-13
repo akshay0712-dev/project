@@ -608,11 +608,11 @@ const blogPosts = [
   },
   {
     "id": 14,
-    "title": "Elon Musk's Neuralink: Revolutionizing Brain-Computer Interfaces and Paving the Way for Advanced Human-Computer Integration",
+    "title": "Neuralink: Revolutionizing Brain-Computer Interfaces",
     "url": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGs0dmM5dWxqd2FlenB2bnVraWRveW41cnM3aHNobGlyYnAzeG5haCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Y4PkFXkfTeEKqGBBsC/giphy.gif",
     "content": [
       {
-        "mainHead": "Elon Musk's Neuralink: Revolutionizing Brain-Computer Interfaces",
+        "mainHead": "Elon Musk's Neuralink: Revolutionizing Brain-Computer Interfaces and Paving the Way for Advanced Human-Computer Integration",
         "subhead": [
           {
             "heading": "What is Neuralink?",
