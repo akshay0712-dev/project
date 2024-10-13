@@ -52,33 +52,36 @@ const Blog = () => {
         })}
       </div>
 
-      <div className="">
+      <div className=" ">
         {topic.map((index) => {
           return (
-            <div key={Post[index - 1].id} className="md:my-5  p-6">
+            <div key={Post[index - 1].id} className="md:my-5  m-3 p-3 rounded-lg bg-[white] border-2 border-[#bebebe]">
               <div
-                className="text-center py-3 text-xl md:text-2xl font-bold"
+                className="text-center py-3 text-xl md:text-2xl font-bold bg-[white]"
                 dangerouslySetInnerHTML={{ __html: Post[index - 1].title }}
               ></div>
               <div
-                className="text-base font-medium"
+                className="text-base font-medium bg-[white]"
                 dangerouslySetInnerHTML={{
                   __html: Post[index - 1].content[0].mainHead,
                 }}
               ></div>
+              {Post[index - 1].url ?  
+               <img src={Post[index - 1].url} alt="" loading="lazy" className="mx-auto my-4 max-w-[200px] md:max-w-[400px] h-auto rounded-lg bg-[white]"/>
+              : "" }
               {Post[index - 1].content[0].subhead.map((head2) => {
                 return (
-                  <div key={head2.heading} className="">
+                  <div key={head2.heading} className="bg-[white]">
                     <div
-                      className="text-lg md:text-xl font-bold pt-5 pb-1"
+                      className="text-lg md:text-xl font-bold pt-5 pb-1 bg-[white]"
                       dangerouslySetInnerHTML={{ __html: head2.heading }}
                     ></div>
-                    <ol className="list-[number] pl-6 pb-5">
+                    <ol className="list-[number] pl-6 pb-5 bg-[white]">
                       {head2.body.map((body2) => {
                         return (
                           <li
                             key={body2}
-                            className=""
+                            className="bg-[white]"
                             dangerouslySetInnerHTML={{ __html: body2 }}
                           ></li>
                         );
@@ -88,7 +91,7 @@ const Blog = () => {
                 );
               })}
               <div
-                className=""
+                className="bg-[white]"
                 dangerouslySetInnerHTML={{
                   __html: Post[index - 1].content[0].footer,
                 }}

@@ -17,7 +17,7 @@ function App() {
       element: (
         <>
           <Navbar />
-          <Age />
+          <Blog />
         </>
       ),
     },
@@ -48,6 +48,7 @@ function App() {
         </>
       ),
     },
+    
     {
       path: "/project/Blog",
       element: (
