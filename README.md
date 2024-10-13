@@ -34,13 +34,15 @@
 ---
 
 ## Day 4: Blog Website
-- Develop a simple blog website where users can read posts and leave comments.
+- Developed a simple blog website where users can read posts and filter them by category.
 - **Technologies**: React, React Router (for navigation)
 - **Features**:
-  - List of blog posts with titles and snippets
-  - Individual blog post page
-  - Comment section for each post
-
+  - List of blog posts with titles and snippets.
+  - Filtering by categories (e.g., Economy, Health, Tech, etc.).
+  - Individual blog post page with full content.
+  - Dynamic content rendering based on category selection.
+  - Responsive design.
+  
 ---
 
 ## Day 5: Expense Tracker

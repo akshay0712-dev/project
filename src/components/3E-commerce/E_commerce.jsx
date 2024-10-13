@@ -190,8 +190,7 @@ const E_commerce = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          );
+            </div>          );
         })}
       </div>
     </>

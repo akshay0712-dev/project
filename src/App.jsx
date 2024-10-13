@@ -7,6 +7,7 @@ import Navbar from './components/navbar.jsx'
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Ecommerce from './components/3E-commerce/E_commerce.jsx'
+import Blog from './components/4Blog/blog.jsx'
 
 
 function App() {
@@ -44,6 +45,15 @@ function App() {
         <>
           <Navbar />
           <Ecommerce />
+        </>
+      ),
+    },
+    {
+      path: "/project/Blog",
+      element: (
+        <>
+          <Navbar />
+          <Blog />
         </>
       ),
     },
