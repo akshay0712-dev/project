@@ -12,16 +12,16 @@ const Blog = () => {
     education: [5, 9, 12],
     sustainable: [7, 10],
   };
-  
-    const [topic, setTopic] = useState(topics.All);
+
+  const [topic, setTopic] = useState(topics.All);
 
   const toggleTopics = (topicName) => {
     setTopic(topics[topicName]);
   };
 
   const setBlog = (id) => {
-    setTopic([id])
-  }
+    setTopic([id]);
+  };
 
   return (
     <>
@@ -35,16 +35,23 @@ const Blog = () => {
               >
                 {topicList}
               </div>
-              <div className={`absolute z-10 px-5 right-5 md:right-0 py-3 hidden group-hover:block  bg-slate-500 rounded-lg text-white max-w-[90vw] md:max-w-[50vw] `} >
-                <div className="bg-slate-500 text-white font-bold text-xl uppercase">{topicList}</div>
+              <div
+                className={`absolute z-10 px-5 right-5 md:right-0 py-3 hidden group-hover:block  bg-slate-500 rounded-lg text-white max-w-[90vw] md:max-w-[50vw] `}
+              >
+                <div className="bg-slate-500 text-white font-bold text-xl uppercase">
+                  {topicList}
+                </div>
                 {topics[topicList].map((index) => {
-                    return(
-                        <div key={index}
-                        className="text-sm md:text-base bg-slate-500 overflow-hidden text-nowrap text-ellipsis pt-2 hover:scale-105 hover:font-semibold cursor-pointer"
-                        onClick={() => setBlog(index)}
-                        dangerouslySetInnerHTML={{ __html: "⁘ "+Post[index - 1].title }}
-                      ></div>
-                    )
+                  return (
+                    <div
+                      key={index}
+                      className="text-sm md:text-base bg-slate-500 overflow-hidden text-nowrap text-ellipsis pt-2 hover:scale-105 hover:font-semibold cursor-pointer"
+                      onClick={() => setBlog(index)}
+                      dangerouslySetInnerHTML={{
+                        __html: "⁘ " + Post[index - 1].title,
+                      }}
+                    ></div>
+                  );
                 })}
               </div>
             </div>
@@ -55,20 +62,32 @@ const Blog = () => {
       <div className=" ">
         {topic.map((index) => {
           return (
-            <div key={Post[index - 1].id} className="md:my-5  m-3 p-3 rounded-lg bg-[white] border-2 border-[#bebebe]">
+            <div
+              key={Post[index - 1].id}
+              className="md:my-5  m-3 p-3 rounded-lg bg-[white] border-2 border-[#bebebe]"
+            >
               <div
                 className="text-center py-3 text-xl md:text-2xl font-bold bg-[white]"
                 dangerouslySetInnerHTML={{ __html: Post[index - 1].title }}
               ></div>
-              <div
-                className="text-base font-medium bg-[white]"
-                dangerouslySetInnerHTML={{
-                  __html: Post[index - 1].content[0].mainHead,
-                }}
-              ></div>
-              {Post[index - 1].url ?  
-               <img src={Post[index - 1].url} alt="" loading="lazy" className="mx-auto my-4 max-w-[200px] md:max-w-[400px] h-auto rounded-lg bg-[white]"/>
-              : "" }
+              <div className="bg-white grid grid-cols-1 xl:grid-cols-[70%_30%] justify-between items-center ">
+                <div
+                  className="text-base font-medium bg-[white] text-center xl:w-[80%] mx-auto"
+                  dangerouslySetInnerHTML={{
+                    __html: Post[index - 1].content[0].mainHead,
+                  }}
+                ></div>
+                {Post[index - 1].url ? (
+                  <img
+                    src={Post[index - 1].url}
+                    alt=""
+                    loading="lazy"
+                    className="mx-auto my-4 w-[200px] xl:h-[200px] 2xl:h-[250px] xl:w-auto 2xl:w-auto h-auto rounded-lg bg-[white]"
+                  />
+                ) : (
+                  ""
+                )}
+              </div>
               {Post[index - 1].content[0].subhead.map((head2) => {
                 return (
                   <div key={head2.heading} className="bg-[white]">
