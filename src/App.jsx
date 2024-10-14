@@ -3,11 +3,10 @@ import './App.css'
 import Age from './components/1Age_Calculator/Age.jsx'
 import Weather from './components/2Weather_App/Weather.jsx'
 import Navbar from './components/navbar.jsx'
-
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Ecommerce from './components/3E-commerce/E_commerce.jsx'
 import Blog from './components/4Blog/blog.jsx'
+import Expense from './components/5Expense Tracker/Expense.jsx'
 
 
 function App() {
@@ -48,13 +47,21 @@ function App() {
         </>
       ),
     },
-    
     {
       path: "/project/Blog",
       element: (
         <>
           <Navbar />
           <Blog />
+        </>
+      ),
+    },
+    {
+      path: "/project/Expense",
+      element: (
+        <>
+          <Navbar />
+          <Expense />
         </>
       ),
     },
