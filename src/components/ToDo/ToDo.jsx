@@ -194,7 +194,7 @@ function ToDo() {
             </div>
           )}
           <div className="bg-white flex flex-row flex-wrap justify-end gap-2">
-            {todos.length >= 0 &&
+            {todos.length != 0 &&
               Object.keys(categories).map((filters) => {
                 return (
                   <div
