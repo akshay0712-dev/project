@@ -17,7 +17,7 @@ function App() {
       element: (
         <>
           <Navbar />
-          <Expense />
+          <ToDo />
         </>
       ),
     },
