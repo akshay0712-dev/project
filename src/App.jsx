@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Ecommerce from './components/3E-commerce/E_commerce.jsx'
 import Blog from './components/4Blog/blog.jsx'
 import Expense from './components/5Expense Tracker/Expense.jsx'
+import ToDo from './components/ToDo/ToDo.jsx'
 
 
 function App() {
@@ -62,6 +63,15 @@ function App() {
         <>
           <Navbar />
           <Expense />
+        </>
+      ),
+    },
+    {
+      path: "/project/Todo",
+      element: (
+        <>
+          <Navbar />
+          <ToDo />
         </>
       ),
     },
