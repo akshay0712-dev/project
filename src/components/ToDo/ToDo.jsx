@@ -13,14 +13,13 @@ function ToDo() {
     work: [1],
     personal: [2],
     study: [3],
-    shopping: [4,6],
+    shopping: [4, 6],
     other: [5],
   });
   // console.log(Object.keys(categories));
-  
-  
+
   const [itemCat, setItemCat] = useState("");
-  
+
   console.log(categories[itemCat]);
   useEffect(() => {
     const todoString = localStorage.getItem("todos");
@@ -71,20 +70,27 @@ function ToDo() {
       setTodos(updatedTodos);
       setTodo("");
       setItemCat("");
-      setDatee(today)
+      setDatee(today);
       setEditId(null);
       showNotification("Todo Edited successfully!"); // Notification for update
     } else {
       setTodos([
         ...todos,
-        { id: uuidv4(), index: id, todo,cat: itemCat, Date: Datee, isCompleted: false },
+        {
+          id: uuidv4(),
+          index: id,
+          todo,
+          cat: itemCat,
+          Date: Datee,
+          isCompleted: false,
+        },
       ]);
       setid(id + 1);
       setTodo("");
       setItemCat("");
-      
-  addItemToShopping()
-      setDatee(today)
+
+      addItemToShopping();
+      setDatee(today);
       showNotification(todo + " Added Successfully!");
     }
   };
@@ -187,14 +193,18 @@ function ToDo() {
               Add Todo to see....
             </div>
           )}
-          <div className="bg-white grid grid-cols-2 md:grid-flow-col gap-2">
-          {todos.length >= 0 && (
-            Object.keys(categories).map((filters) => {
-              return (
-                <div key={filters} className="capitalize text-center bg-violet-900 py-1 px-3 rounded-md cursor-pointer text-white">{filters}</div>
-              )
-            })
-          )}
+          <div className="bg-white flex flex-row flex-wrap justify-end gap-2">
+            {todos.length >= 0 &&
+              Object.keys(categories).map((filters) => {
+                return (
+                  <div
+                    key={filters}
+                    className="capitalize text-center bg-violet-900 w-[100px] py-1 px-3 rounded-md cursor-pointer text-white"
+                  >
+                    {filters}
+                  </div>
+                );
+              })}
           </div>
           {todos.map((item) => (
             <div
