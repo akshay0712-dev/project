@@ -8,14 +8,7 @@ import Ecommerce from './components/3E-commerce/E_commerce.jsx'
 import Blog from './components/4Blog/blog.jsx'
 import Expense from './components/5Expense Tracker/Expense.jsx'
 import ToDo from './components/ToDo/ToDo.jsx'
-function ErrorPage() {
-  return (
-    <div className="h-[30vh] flex flex-col justify-evenly items-center">
-      <h1 className="text-3xl text-center">404 - Page Not Found</h1>
-      <p className="text-lg md:text-2xl text-center">The page you are looking for does not exist.</p>
-    </div>
-  );
-}
+
 
 function App() {
   const router = createBrowserRouter([
@@ -79,16 +72,6 @@ function App() {
         <>
           <Navbar />
           <ToDo />
-        </>
-      ),
-    },
-    {
-      path: "*",
-      element: (
-        <>
-          <Navbar />
-          <ErrorPage />
-          <Footer />
         </>
       ),
     },
