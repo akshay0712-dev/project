@@ -55,14 +55,17 @@
 
 ---
 
-## Day 6: Recipe Finder
-- Build a recipe finder application that allows users to search for recipes based on ingredients.
-- **Technologies**: React, Axios (for API requests)
-- **Features**:
-  - Search recipes by ingredient
-  - Display recipe details including instructions and nutrition facts
-  - Save favorite recipes
 
+## Day 6: ToDo App with Categories
+- Build a dynamic ToDo application where users can create, categorize, and manage tasks, and persist data using local storage.
+- **Technologies**: React, Local Storage (for data persistence)
+- **Features**:
+  - Add/Edit Todos
+  - Categorize Tasks
+  - Mark Tasks as Completed
+  - Filter by Category
+  - Local Storage Persistence
+  - Delete Tasks
 ---
 
 ## Day 7: Portfolio Website

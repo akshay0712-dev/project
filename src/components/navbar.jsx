@@ -14,6 +14,7 @@ const Navbar = () => {
            <NavLink to={`/project/blog`}  className="font-normal text-sm text-center md:text-lg capitalize cursor-pointer bg-slate-600 py-1 px-5 border border-white flex items-center justify-center rounded-lg  ">04 Blog</NavLink >
            <NavLink to={`/project/Expense`}  className="font-normal text-sm text-center md:text-lg capitalize cursor-pointer bg-slate-600 py-1 px-5 border border-white flex items-center justify-center rounded-lg  ">05 Expense Tracker</NavLink >
            <NavLink to={`/project/Todo`}  className="font-normal text-sm text-center md:text-lg capitalize cursor-pointer bg-slate-600 py-1 px-5 border border-white flex items-center justify-center rounded-lg  ">06 ToDo</NavLink >
+           <NavLink to={`https://akshay0712-dev.github.io/portfolio/`}  className="font-normal text-sm text-center md:text-lg capitalize cursor-pointer bg-slate-600 py-1 px-5 border border-white flex items-center justify-center rounded-lg  ">07 Portfolio</NavLink >
         </div>
     </div>
 
